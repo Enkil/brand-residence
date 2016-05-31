@@ -9,8 +9,9 @@ $(document).ready(function() {
     $(window).scroll(function(){
         top = $(this).scrollTop();
 
-        if((headerHeight - top ) <= navHeight){
+        if((headerHeight - top + 30 ) <= navHeight){
             $('.top-nav').css('top','0');
+            $('.top-nav').css({'border-bottom' : '1px solid #ccc'});
         }
         else if(top < headerHeight && top > 0){
             $('.top-nav').css({'bottom' : top - navHeight, 'top':''});
@@ -19,9 +20,10 @@ $(document).ready(function() {
         else if(top < navHeight){
             $('.top-nav').css({'top':'','bottom':$(window).height() + navHeight});
         }
+        // navHeight = $('.top-nav').outerHeight();
     });
 
-// main-slider
+ // main-slider
   $('.main-slider').slick({
   dots: true,
   infinite: true,
@@ -43,7 +45,7 @@ $(document).ready(function() {
   asNavFor: '.slider-card-nav'
 });
 
-$('.slider-card-nav').slick({
+ $('.slider-card-nav').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   asNavFor: '.slider-for-card',
@@ -61,7 +63,7 @@ $('.slider-card-nav').slick({
     }]
 });
 
-// Top menu toggler
+ // Top menu toggler
   var toggler = document.getElementById('js-top-toggler');
   toggler.onclick = function(e){
      e.preventDefault();
@@ -69,7 +71,7 @@ $('.slider-card-nav').slick({
      document.getElementById('js-top-menu').classList.toggle('openned');
  };
 
-// Left menu toggler
+ // Left menu toggler
   var togglerLeft = document.getElementById('js-left-toggler');
   togglerLeft.onclick = function(e){
      e.preventDefault();

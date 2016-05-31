@@ -85,7 +85,7 @@ div[class*="col"] {float: left; padding: 12px; box-sizing: border-box; position:
     z-index: 1000;
     width:100%;
     background-color: #fff;
-    height: 130px !important;
+    /*height: 130px !important;*/
     border-bottom: 1px solid transparent;
 }
 
@@ -148,6 +148,8 @@ div[class*="col"] {float: left; padding: 12px; box-sizing: border-box; position:
   user-select: none;
   cursor: pointer;
   float: right;
+    position: relative;
+    z-index: 1000;
 }
 .header-toggler > span {
 	color: #000;
@@ -208,6 +210,9 @@ div[class*="col"] {float: left; padding: 12px; box-sizing: border-box; position:
 
 .header-menu{
 	transition: all 1s ease;
+    background-color: #fff;
+    position: relative;
+    /*z-index: 500;*/
 }
 
 .header-menu ul{
