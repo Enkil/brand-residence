@@ -72,17 +72,21 @@ div[class*="col"] {float: left; padding: 12px; box-sizing: border-box; position:
     background: fixed url("../img/header_bg.jpg") no-repeat 50% 0;
     /*height: 100vh;*/
     position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .top-nav{
-    position: absolute;
-    bottom: 0;
+    /*position: absolute;*/
+    position: fixed;
+    /*bottom: 0;*/
     top: initial;
     z-index: 1000;
     width:100%;
     background-color: #fff;
-    transition: all 5s linear;
-    border-bottom: none;
+    height: 130px !important;
+    border-bottom: 1px solid transparent;
 }
 
 .top-nav.-fixed{

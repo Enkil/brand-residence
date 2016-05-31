@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
     var navHeight = $('.top-nav').outerHeight();
+    $('.top-nav').css('bottom', $(window).height() + navHeight);
     $('.firstScreen').css('height', $(window).height() + navHeight);
     var headerHeight = $('.firstScreen').outerHeight();
     var top = 0;
@@ -8,33 +9,20 @@ $(document).ready(function() {
     $(window).scroll(function(){
         top = $(this).scrollTop();
 
-        if((headerHeight - top) <= navHeight){
-            $('.top-nav').addClass("-fixed");
+        if((headerHeight - top ) <= navHeight){
+            // $('.top-nav').addClass("-fixed");
+            $('.top-nav').css('top','0');
         }
+        // else if(top < headerHeight && top > 0){
+        //     $('.top-nav').removeClass("-fixed");
+        // }
         else if(top < headerHeight && top > 0){
-            $('.top-nav').removeClass("-fixed");
+            $('.top-nav').css({'bottom' : top - navHeight, 'top':''});
         }
-
-        scrollPos = top;
+        else if(top < navHeight){
+            $('.top-nav').css({'top':'','bottom':$(window).height() + navHeight});
+        }
     });
-
-
-    // var scrollPos = 0;
-    // $(window).scroll(function(){
-    //     var st = $(this).scrollTop();
-    //     if (st > scrollPos &&  st < headerHeight){
-    //         headerHeight = headerHeight - 1;
-    //         $('#js-header-top').animate({
-    //             height: headerHeight
-    //         },50);
-    //     } else if (st < scrollPos && st < headerHeight){
-    //         headerHeight = headerHeight + 1;
-    //         $('#js-header-top').animate({
-    //             height: headerHeight
-    //         },50);
-    //     }
-    //     scrollPos = st;
-    // });
 
 // main-slider
   $('.main-slider').slick({
