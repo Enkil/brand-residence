@@ -1,0 +1,290 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	
+	.col-xs1 {width: 8.33%;}
+	.col-xs2 {width: 16.66%;}
+	.col-xs3 {width: 25%;}
+	.col-xs4 {width: 33.33%;}
+	.col-xs5 {width: 41.66%;}
+	.col-xs6 {width: 50%;}
+	.col-xs7 {width: 58.33%;}
+	.col-xs8 {width: 66.66%;}
+	.col-xs9 {width: 75%;}
+	.col-xs10 {width: 83.11%;}
+	.col-xs11 {width: 91.66%;}
+	.col-xs12 {width: 100%;}
+	
+	.row{
+		margin: 0;
+	}
+
+
+	.header-logo{
+		width: 80%;
+	}
+
+	.header-menu{
+		display: none;
+	}
+
+	.header-menu.openned{
+		display: block;
+	}
+
+	.header-menu li{
+		width: 100%;
+		text-align: center;
+		padding-left: 0;
+		margin-bottom: 20px;
+	}
+
+	
+
+	.aside-wrapper{
+		position: absolute!important;
+		left: -9999px;
+		z-index: 10;
+		background-color: #fff;
+		padding-top: 40px!important;
+		transition: all 1s ease;
+	}
+
+	.aside-wrapper.openned{
+		left: 0;
+		width: 100%;
+		box-shadow: 1px 0 0 1px #ccc;
+		transition: all 1s ease;
+	}
+
+	.item-title{
+		text-align: center;
+	}
+	
+	.item-desc{
+		text-align: center;
+	}
+
+	.item-price{
+		text-align: center;
+	}
+
+	.cat-section{
+		text-align: center;
+	}
+
+	.all-items{
+		margin: 0;
+		float: none;
+	}
+	
+	.social-widget-instagram{
+	  width: 100%;
+	 }
+	 
+	 .social-widget-vk img{
+	  float: none;
+	 }
+
+	 .social-widget-vk{
+	  width: 100%;
+	  text-align: center;
+	 }
+
+	 .social-news{
+	  text-align: center;
+	 }
+
+	 .footer-logo{
+	  text-align: center;
+	 }
+	 
+	 .footer-logo img{
+	  
+	 }
+
+	 .footer-messengers{
+	  text-align: center;
+	 }
+
+	 .footer-messengers h4{
+	  margin: 0 auto;
+	 }
+
+	 .footer-social{
+	 	text-align: center;
+	 }
+
+	 .footer-contacts{
+	 	text-align: center;
+	 }
+
+	 .footer-contacts-phone, .footer-contacts-email, .footer-contacts-adress{
+	 	display: block;
+	 	text-align: center;
+	 }
+
+	 .footer-contacts h4{
+	 	margin-left: 0;
+	 }
+
+	.left-toggler {
+	  display: flex;
+	  align-items: center;
+	  // width: 30px;
+	  // height: 28px;
+	  text-transform: uppercase;
+	  user-select: none;
+	  cursor: pointer;
+	  float: right;
+	  position: absolute;
+	  right: 12px;
+	  top: 12px;
+	}
+	.left-toggler > span {
+		color: #000;
+	  // display: inline-block;
+	  // vertical-align: bottom;
+	  // width: 100%;
+	  // height: 4px;
+	  // background: #000;
+	  // border-radius: .2rem;
+	  // position: relative;
+	  // transition: background .3s .5s;
+	}
+	// .left-toggler > span:before, .left-toggler > span:after {
+	//   width: 100%;
+	//   height: 4px;
+	//   background: #000;
+	//   border-radius: .2rem;
+	//   position: absolute;
+	//   left: 0;
+	//   content: '';
+	//   transform-origin: 50% 50%;
+	//   transition: top .3s .6s, transform .3s;
+	// }
+	// // .left-toggler > span:before {
+	// //   top: .7rem;
+	// // }
+	// // .left-toggler > span:after {
+	// //   top: -.7rem;
+	// // }
+	// // .left-toggler.-active > span {
+	// //   transition: background .3s 0;
+	// //   background: transparent;
+	// // }
+	// // .left-toggler.-active > span:before, .left-toggler.-active > span:after {
+	// //   transition: top .3s, transform .3s .5s;
+	// //   top: 0;
+	// // }
+	// // .left-toggler.-active > span:before {
+	// //   transform: rotate3d(0, 0, 1, 45deg);
+	// // }
+	// // .left-toggler.-active > span:after {
+	// //   transform: rotate3d(0, 0, 1, -45deg);
+	// // }
+
+	.card-item-desc h2 {
+		text-align: center;
+	}
+
+	.contact-social-messengers{
+		text-align: center;
+		width: 100%;
+	}
+
+	.contact-adress .footer-contacts-phone, .contact-adress .footer-contacts-email, .contact-adress .footer-contacts-adress {
+		margin: 0;
+		text-align: center;
+		display: block;
+		width: 100%;
+		margin-top: 20px;
+	}
+
+	.slider-for-card-img{
+		text-align: center;
+	}
+	.product-slider .slider-for-card-img img{
+		width: auto;
+		max-width: 180px;
+		margin: 0 auto;
+	}
+
+	.pagination ul{
+		margin: 20px 0;
+	}
+
+	.pagination ul li{
+		margin: 5px 0;
+	}
+
+	.pagination-back, .pagination-next {
+		float: none;
+		height: 28px;
+		display: inline-block;
+	}
+
+	.submenu li a{
+		display: block;
+		height: 40px;
+		line-height: 40px;
+	}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+	.ascending, .descending{
+		display: block;
+		width: 100%;
+		margin-left: 0;
+		margin-bottom: 10px;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+	
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 769px) {
+	.header-toggler{
+		display:none;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
