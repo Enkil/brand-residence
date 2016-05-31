@@ -10,14 +10,11 @@ $(document).ready(function() {
         top = $(this).scrollTop();
 
         if((headerHeight - top ) <= navHeight){
-            // $('.top-nav').addClass("-fixed");
             $('.top-nav').css('top','0');
         }
-        // else if(top < headerHeight && top > 0){
-        //     $('.top-nav').removeClass("-fixed");
-        // }
         else if(top < headerHeight && top > 0){
             $('.top-nav').css({'bottom' : top - navHeight, 'top':''});
+            $('.header-logo').css('bottom', -top);
         }
         else if(top < navHeight){
             $('.top-nav').css({'top':'','bottom':$(window).height() + navHeight});
